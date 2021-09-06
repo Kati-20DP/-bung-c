@@ -1,0 +1,52 @@
+##Widerstand
+Für 3 Einzelwiderstände, die entweder in Reihe oder parallel geschaltet sind,
+soll der Gesamtwiderstand berechnet werden.
+Programmieren Sie ein Menü, so dass der Benutzer auswählen kan, für welche
+Schaltungen die Beziehung usgeführt werden soll. Je nach Auswahl soll dann
+die Berechnung des Gesamtwiderstandes für die vom Benutzer eingegebenen
+Widerstandswerte erfolgen und ausgegeben werden.
+
+Hinweise:
+Berechnung:
+Reihe R= R1 + R2 + R3
+Parallel 1/R= 1/R1 + 1/R2 + 1/R3
+
+#include <iostream>
+using namespace std;
+int main()
+
+{
+unsigned short int wahl;
+float r1,r2,r3,gesamtr;
+cout<<"1      Reihenschaltung\n"
+      "2      Parallelschaltung\n";
+cout<<"Bitte wählen Sie aus: \n";
+cin>>wahl;
+switch (wahl)
+{
+case 1: cout<<"Geben Sie den ersten Widerstand ein: ";
+        cin>>r1;
+        cout<<"Geben Sie den zweiten Widerstand ein: ";
+        cin>>r2;
+        cout<<"Geben Sie den dritten Widerstand ein: ";
+        cin>>r3;
+        gesamtr=r1+r2+r3;
+        cout<<"Der Gesamtwiderstand betraegt: "<<gesamtr;
+        break;
+case 2: cout<<"Geben Sie den ersten Widerstand ein: ";
+        cin>>r1;
+        cout<<"Geben Sie den zweiten Widerstand ein: ";
+        cin>>r2;
+        cout<<"Geben Sie den dritten Widerstand ein: ";
+        cin>>r3;
+        gesamtr=1/r1+1/r2+1/r3;
+        cout<<"Der Gesamtwiderstand betraegt: "<<gesamtr;
+        break;
+default:cout<<"Fehler";
+}
+cout<<endl;
+
+  getchar();
+  return 0;
+}
+ 
