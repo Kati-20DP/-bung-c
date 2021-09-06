@@ -25,3 +25,44 @@ else
   getchar();
   return 0;
 }
+
+Erweitert:
+92 - 100   Note: 1
+81 - 91    Note: 2
+68 - 80    Note: 3
+50 - 67    Note: 4
+30 - 50    Note: 5
+unter 30   Note: 6
+
+#include <iostream>
+using namespace std;
+int main()
+
+{
+float errpunkte, gespunkte, prozent;
+
+cout<<"Geben Sie die Gesamtpunkte ein: ";
+cin>>gespunkte;
+cout<<"Geben Sie die erreichten Punkte ein: ";
+cin>>errpunkte;
+prozent=errpunkte/gespunkte*100;
+
+	if (prozent >= 92)
+	{cout<<"Note 1";}
+	else
+		if (prozent>=81)
+		{cout<<"Note 2";}
+		else
+			if (prozent>=68)
+			{cout<<"Note 3";}
+			else
+				if (prozent>=50)
+				{cout<<"Note 4";}
+				else
+					if (prozent>=30)
+					{cout<<"Note 5";}
+					else
+					{cout<<"Note 6";}
+  getchar();
+  return 0;
+}
