@@ -1,0 +1,27 @@
+###natürliche zahl
+von drei eingegebenen ungleichen natürlichen Zahlen soll die größte Zahl
+ermittelt werden.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+float a,b,c;
+cout<<"Gib den Wert für a an: ";
+cin>>a;
+cout<<"Gib den Wert für b an: ";
+cin>>b;
+cout<<"Gib den Wert für c an: ";
+cin>>c;
+
+if (a>b && a>c)
+ {cout<<"A ist die größte Zahl";}
+else
+ if (b>c)
+ {cout<<"B ist die größte Zahl";}
+ else
+ {cout<<"c ist die größte Zahl";}
+
+  getchar();
+  return 0;
+}
