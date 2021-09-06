@@ -1,0 +1,27 @@
+###Prüfungsauswertung
+
+Erstellen Sie ein Programm zur Auswertung Ihrer Prüfung Nach Eingabe Der
+erreichten Punkte soll als Auswertung auf dem Bildschirm:
+Bestanden oder Durchgefallen stehen.
+Hinweis: Die Maximalpunktzahl ist dem Programmierer nicht bekannt.
+Bestanden mind 50 %
+
+#include <iostream>
+using namespace std;
+int main()
+{
+float errpunkte, gespunkte, prozent;
+
+cout<<"Geben Sie die Gesamtpunkte ein: ";
+cin>>gespunkte;
+cout<<" Geben Sie die erreichten Punkte ein: ";
+cin>>errpunkte;
+prozent=errpunkte/gespunkte;
+
+if (prozent<0.5)
+{cout<<"Durchgefallen";}
+else
+{cout<<"Bestanden";}
+  getchar();
+  return 0;
+}
