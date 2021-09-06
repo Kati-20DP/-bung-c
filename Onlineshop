@@ -1,0 +1,23 @@
+###Onlineshop
+Ein Onlineshop berechnet bei Lieferung der Ware Versandkosten in Höhe von 5,5€.
+Ab einem Bestellwert von 100 €entfallen die Versandkosten.
+Erstellen Sie ein Programm, welches dem Nutzer bei Eingabe des Bestellwertes den
+Rechnungsbetrag errechnet und auf dem Ausgabebildschirm angibt.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+float rechnungsbetrag, versandkosten, endbetrag;
+
+cout<<"Geben Sie den Rechnungsbetrag ein: ";
+cin>>rechnungsbetrag;
+versandkosten=5.5;
+endbetrag=rechnungsbetrag;
+if (rechnungsbetrag<100)
+{endbetrag=rechnungsbetrag+versandkosten;}
+
+cout<<"Der Endbetrag lautet: "<<endbetrag;
+  getchar();
+  return 0;
+}
