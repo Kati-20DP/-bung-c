@@ -1,0 +1,21 @@
+### Problem
+Nur heute bekommen Sie die Mehrwertsteuer geschenkt.
+Erstellen Sie ein Programm zur Berechnung der Mehrwertsteuer und des zu zahlenden Preises für die Artikel der Werbeaktion.
+
+### Lösung
+#include <iostream>
+using namespace std;
+int main()
+{
+
+ float preis, mwst, ergebnis, endpreis;
+ cout<<"Geben Sie den Preis ein: ";
+cin>>preis;
+cout<<"Geben Sie die Mehrwertsteuer in % an: ";
+cin>>mwst;
+ergebnis=preis/100*mwst;
+endpreis=preis-ergebnis;
+cout<<"Der Gesamtpris betraegt: "<<endpreis;
+  getchar();
+  return 0;
+}

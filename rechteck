@@ -1,0 +1,18 @@
+### Rechteckberechnung
+
+#include <iostream>
+using namespace std;
+int main()
+{
+ float laenge, breite, flaeche;
+ cout<<"Geben Sie die laenge ein: ";
+ cin>>laenge;
+ cout<<"Geben Sie die breite ein: ";
+ cin>>breite;
+ flaeche=laenge*breite;
+ cout<<"Die Flaeche betragt: "<<flaeche;
+
+
+  getchar();
+  return 0;
+}
