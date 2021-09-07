@@ -19,14 +19,14 @@ float einlage, zinssatz, endbetrag;
 
      }
 
-     int x=0;
+     int x=0;  //damit er bei 0 anfängt zu Zählen
 	while (einlage<endbetrag)
      {
 
-einlage=(einlage+(einlage*zinssatz/100));
+einlage=(einlage+(einlage*zinssatz/100)); //Berechnung der Zinsen
 x++;
 }
-cout<<"Bis zum gewünschten Betrag dauert es " <<x<<"Jahre.";
+cout<<"Bis zum gewünschten Betrag dauert es " <<x<<" Jahre.";
 
   getchar();
   return 0;
