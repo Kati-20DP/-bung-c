@@ -2,3 +2,32 @@
 Entwickeln Sie ein Programm, das die Anzahl der Jahre berechnet,
 die man warten muss, bis man aufgrund einer einmaligen Einlage
 und eines konstanten Zinssatzes Million?r geworden ist.
+
+#include <iostream>
+using namespace std;
+int main()
+
+{
+float einlage, zinssatz, endbetrag;
+   {
+     cout<<"Bitte geben Sie den gewünschten Endbetrag ein: ";
+     cin>>endbetrag;
+     cout<<"Bitte geben Sie die einmalige Einlage an: ";
+     cin>>einlage;
+     cout<<"Bitte geben Sie den Zinssatz an: ";
+     cin>>zinssatz;
+
+     }
+
+     int x=0;
+	while (einlage<endbetrag)
+     {
+
+einlage=(einlage+(einlage*zinssatz/100));
+x++;
+}
+cout<<"Bis zum gewünschten Betrag dauert es " <<x<<"Jahre.";
+
+  getchar();
+  return 0;
+}
