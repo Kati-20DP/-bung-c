@@ -1,0 +1,105 @@
+### Taschenrechner
+
+Erstellen Sie ein Progamm für folgende Problemstellung.
+In einem Menü werden die Grundrechenarten zur Auswahl gestellt.
+Der Nutzer ist aufzufordern 2 natürliche Zahlen einzugeben und den Menüpunkt
+für die gewünschte Rechenart auszuwählen.
+Das Ergebnis der Berechnung ist auf dem Bildschirm auszugeben
+
+#include <iostream>
+using namespace std;
+int main()
+
+{
+unsigned short int wahl;
+float a,b,gesamt;
+cout<<"Geben Sie a ein: ";
+        cin>>a;
+        cout<<"Geben Sie b ein: ";
+        cin>>b;
+cout<<"1      Addition\n"
+      "2      Subtraktion\n"
+      "3      Multiplikation\n"
+      "4      Division\n";
+cout<<"Bitte wählen Sie aus: \n";
+cin>>wahl;
+switch (wahl)
+{
+case 1:
+        gesamt=a+b;
+        cout<<"Das Ergebnis betraegt: "<<gesamt;
+        break;
+case 2:
+        gesamt=a-b;
+        cout<<"Das Ergebnis betraegt: "<<gesamt;
+        break;
+case 3: cout<<"Geben Sie a ein: ";
+
+        gesamt=a*b;
+        cout<<"Das Ergebnis betraegt: "<<gesamt;
+        break;
+case 4:
+        gesamt=a/b;
+        cout<<"Das Ergebnis betraegt: "<<gesamt;
+        break;
+default:cout<<"Fehler";
+}
+cout<<endl;
+
+  getchar();
+  return 0;
+}
+
+oder
+
+
+#include <iostream>
+using namespace std;
+int main()
+
+{
+unsigned short int wahl;
+float a,b,gesamt;
+cout<<"1      Addition\n"
+      "2      Subtraktion\n"
+      "3      Multiplikation\n"
+      "4      Division\n";
+cout<<"Bitte wählen Sie aus: \n";
+cin>>wahl;
+switch (wahl)
+{
+case 1: cout<<"Geben Sie a ein: ";
+        cin>>a;
+        cout<<"Geben Sie b ein: ";
+        cin>>b;
+        gesamt=a+b;
+        cout<<"Das Ergebnis betraegt: "<<gesamt;
+        break;
+case 2: cout<<"Geben Sie a ein: ";
+        cin>>a;
+        cout<<"Geben Sie b ein: ";
+        cin>>b;
+        gesamt=a-b;
+        cout<<"Das Ergebnis betraegt: "<<gesamt;
+        break;
+case 3: cout<<"Geben Sie a ein: ";
+        cin>>a;
+        cout<<"Geben Sie b ein: ";
+        cin>>b;
+        gesamt=a*b;
+        cout<<"Das Ergebnis betraegt: "<<gesamt;
+        break;
+case 4: cout<<"Geben Sie a ein: ";
+        cin>>a;
+        cout<<"Geben Sie b ein: ";
+        cin>>b;
+        gesamt=a/b;
+        cout<<"Das Ergebnis betraegt: "<<gesamt;
+        break;
+default:cout<<"Fehler";
+}
+cout<<endl;
+
+  getchar();
+  return 0;
+}
