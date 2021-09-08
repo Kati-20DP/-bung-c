@@ -1,0 +1,19 @@
+### Zählen 1-20
+
+Es sollen die Zahlen von 1-20 ausgegeben werden.
+
+#include <iostream>
+using namespace std;
+int main()   
+
+{
+int x=1;
+do
+{
+cout<<x<<endl;
+x++;
+}
+while (x<=20);
+  getchar();
+  return 0;
+}

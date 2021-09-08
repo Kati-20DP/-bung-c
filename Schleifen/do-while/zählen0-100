@@ -1,0 +1,21 @@
+### Zählen 0-100
+
+Es sollen die Zahlen von 0-100 in 5er Schritten ausgegeben werden
+
+#include <iostream>
+using namespace std;
+int main()
+
+{
+int x=0;
+do
+{
+cout<<x<<endl;
+x=x+5;
+}
+while (x<=100);
+  getchar();
+  return 0;
+}
+
+ 
