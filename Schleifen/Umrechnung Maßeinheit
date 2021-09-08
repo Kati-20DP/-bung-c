@@ -1,0 +1,199 @@
+### Umrechnung Maßeinheit
+
+Erstellen Sie ein Programm zur Umrechnung der Maßeinheiten kw in PS
+(Hinweis 1kw=1.36 PS bzw 1PS= 0.736 kW)
+
+a) Die Umrechnung soll für die Werte von 50 bis 70 kW in Tabellenform
+dargestellt werden.
+
+#include <iostream>
+using namespace std;
+int main()
+
+{
+float ps, kw=50;
+
+while (kw<=70)
+{
+ps=kw*1.36;
+cout<<ps<<endl;
+kw++;
+}
+  getchar();
+  return 0;
+}
+
+
+ b) Geben Sie in Version 2 dem Nutzer die Möglichkeit,
+ Anfangswert, Schrittweite und Endwert der Tabelle selbst
+ festzulegen.
+
+ #include <iostream>
+ using namespace std;
+ int main()
+
+ {
+ float anfang, weite, ende,ps;
+
+ cout<<"Geben Sie den Anfangswert ein: ";
+ cin>>anfang;
+ cout<<"Geben Sie die Schrittweite ein: ";
+ cin>>weite;
+ cout<<"Geben Sie den Endwert ein: ";
+ cin>>ende;
+
+ while (anfang<=ende)
+ {
+ ps=anfang*1.36;
+ anfang=anfang+weite;
+ cout<<ps<<endl;
+ }
+   getchar();
+   return 0;
+ }
+
+  c) Absicherung der Eingabewerte gegen ungültige Eingabewerte
+
+  #include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    float kw, weite, ende, ps, x, y, z;
+
+    x:
+    cout<<"Geben Sie den Anfangswert an: ";
+        if (cin>>kw && kw >0)
+ 			{
+  				cout<<"Wert io"<<endl;
+  			}
+	    else
+			{
+				cout<<"Sie müssen eine gülte Zahl eingeben"<<endl;
+				string tmp;
+				cin.clear ();
+				getline(cin,tmp);
+				goto x;
+			}
+	y:
+    cout<<"Geben Sie die Weite an:";
+     if (cin>>weite && weite >0)
+ 			{
+  				cout<<"Wert io"<<endl;
+  			}
+	 else
+			{
+			    string tmp;
+				cout<<"Sie müssen eine gülte Zahl eingeben"<<endl;
+				cin.clear ();
+				getline(cin,tmp);
+				goto y;
+			}
+	z:
+    cout<<"Geben Sie das Ende ein:";
+     if (cin>>ende && ende >0)
+ 			{
+  				cout<<"Wert io"<<endl;
+  			}
+	    else
+			{
+			    string tmp;
+				cout<<"Sie müssen eine gülte Zahl eingeben"<<endl;
+				cin.clear ();
+				getline(cin,tmp);
+				goto z;
+			}
+
+
+   while (kw<=ende)
+   {
+       ps=kw*1.36;
+       kw=kw+weite;
+       cout<<ps<<endl;
+
+   }
+   getchar();
+    return 0;
+}
+
+d) Möglichkeit der Programmwiederholung
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    float kw, weite, ende, ps, x, y, z;
+    int abbrechen=0;
+    char wahl;
+while (abbrechen==0)
+{
+        x:
+        cout<<"Geben Sie den Anfangswert an: ";
+             if (cin>>kw && kw >0)
+ 			{
+  				cout<<"Wert io"<<endl;
+  			}
+	         else
+			{
+				cout<<"Sie müssen eine gülte Zahl eingeben"<<endl;
+				string tmp;
+				cin.clear ();
+				getline(cin,tmp);
+				goto x;
+			}
+    	y:
+        cout<<"Geben Sie die Weite an:";
+            if (cin>>weite && weite >0)
+ 			{
+  				cout<<"Wert io"<<endl;
+  			}
+	        else
+			{
+			    string tmp;
+				cout<<"Sie müssen eine gülte Zahl eingeben"<<endl;
+				cin.clear ();
+				getline(cin,tmp);
+				goto y;
+			}
+    	z:
+        cout<<"Geben Sie das Ende ein:";
+             if (cin>>ende && ende >0)
+ 			{
+  				cout<<"Wert io"<<endl;
+  			}
+	        else
+			{
+			    string tmp;
+				cout<<"Sie müssen eine gülte Zahl eingeben"<<endl;
+				cin.clear ();
+				getline(cin,tmp);
+				goto z;
+			}
+
+
+   while (kw<=ende)
+   {
+       ps=kw*1.36;
+       kw=kw+weite;
+       cout<<ps<<endl;
+
+   }
+    cout<<endl<<"Abbrechen? (J)a/(N)ein"<<endl;
+	cin>>wahl;
+		switch (wahl)
+			{
+				case 'j':		//wenn keine "Aktion", kein break, vorhanden ist wird die nächste Anweisung durchgeführt
+				case 'J': abbrechen=1;
+					break;
+				case 'n':
+				case 'N': abbrechen=0;
+					break;
+				default:cout<<"Falsche Auswahl (nur J/j oder N/n)";
+			}
+}
+getchar ();
+return 0;
+}
