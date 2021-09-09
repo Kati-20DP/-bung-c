@@ -1,0 +1,36 @@
+Schreiben Sie ein Programm, das nach eingabe eines Nettopreises die
+Mehrwertsteuer berechnet
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+float netto, mwst, endbetrag;
+
+cout<<"Geben Sie den Nettobetrag ein: ";
+cin>>netto;
+mwst=0.19;
+endbetrag=netto*mwst;
+cout<<endbetrag;
+  getchar();
+  return 0;
+}
+
+Ergänzen Sie dieses. mit der Ausgabe des Bruttobetrages
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+float netto, mwst, endbetrag;
+
+cout<<"Geben Sie den Nettobetrag ein: ";
+cin>>netto;
+mwst=0.19;
+endbetrag=netto+netto*mwst;
+cout<<endbetrag;
+  getchar();
+  return 0;
+}
