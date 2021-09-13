@@ -1,0 +1,37 @@
+
+
+#include <iostream>
+using namespace std;
+float berechne (float brei, float lae);
+void ausgabe (float flae);
+void eingabe (float *px, string bez);
+
+int main()
+{
+float laenge, breite, flaeche;
+eingabe(&laenge, "laenge");
+eingabe(&breite,"breite");
+flaeche=berechne(laenge,breite);
+cout<<endl;
+ausgabe(flaeche);
+getchar();
+return 0;
+}
+
+void eingabe (float *px,string bez)
+{
+cout<<bez<<" eingeben: ";
+cin>>*px;
+}
+
+float berechne (float lae, float brei)
+{
+float flae;
+flae=lae*brei;
+return flae;
+}
+
+void ausgabe (float fl)
+{
+cout<<"flaeche betraegt: "<<fl;
+}
