@@ -1,0 +1,31 @@
+### Zinseszins
+Zinseszins: Sie zahlen auf ein Konto zu einem Zinssatz von 5% jedes Jahr 5000
+Euro ein. Erstellen Sie eine Tabelle mit der Jahreszahl links und dem 
+Kontostand rechts.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+int einzahlung,  n,p;
+einzahlung=5000;
+
+n=1;
+
+while (n<=5)
+
+
+{
+
+einzahlung=einzahlung+(einzahlung*(0.05));
+
+cout<<"Jahr: "<<n<<" Betrag: "<<einzahlung<<endl;
+n++;
+einzahlung=einzahlung+5000;
+
+}
+
+  getchar();
+  return 0;
+}
