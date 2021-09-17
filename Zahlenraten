@@ -1,0 +1,32 @@
+##Zahlenraten
+Es soll eine Zahl zwischen 0 und 100 erraten werden.
+
+#include <iostream>
+using namespace std;
+int main()
+
+{
+int schaetzung, zahl=50;
+cout<<"Gib deine Schaetzung ab: ";
+cin>>schaetzung;
+
+if (schaetzung>zahl)
+	{
+	cout<<"Sie liegen darueber";
+	}
+	else
+		if (schaetzung<zahl)
+		{
+		cout<<"Sie liegen darunter";
+		}
+		else
+		{
+		cout<<"Sie liegen richtig";
+
+		}
+
+
+
+  getchar();
+  return 0;
+}

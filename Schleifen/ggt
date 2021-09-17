@@ -1,0 +1,28 @@
+###größter gemeinsamer Teiler
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+int a,b;
+cout<<"a";
+cin>>a;
+cout<<"b";
+cin>>b;
+
+while (b>0)
+{
+if (b>a)
+{
+int hilf = a;
+a=b;
+b=hilf;
+}
+a=a-b;
+}
+cout<<a<<endl;
+
+  getchar();
+  return 0;
+}

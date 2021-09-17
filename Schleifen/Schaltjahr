@@ -1,0 +1,24 @@
+###Schaltjahr
+Ein Schaltjahr ist jedes Jahr, das durch 4 Teilbar ist. Allerdings
+ist es kein Schaltjahr, wenn es durch 100 Teilbar ist.
+
+#include <iostream>
+using namespace std;
+
+int jahr=0;
+int main()
+{
+cout<<"Geben Sie die Jahreszahl ein: \n"<<endl;
+cin>>jahr;
+if ( ( (jahr%4==0) && (jahr%100!=0) ) || (jahr%400==0) )
+{
+cout<<" Schaltjahr"<<endl;
+}
+else
+{
+cout<<"kein Schaltjahr";
+}
+
+getchar();
+  return 0;
+}

@@ -1,0 +1,33 @@
+### Kapital verdoppeln
+
+Für einen vom Nutzer einzugebenden Geldbetrag sowie dem
+  Zinssatz ist zu ermitteln, nach wieviel Jahren sich das
+  Kapital bei jährlicher Verzinsung mindestens verdoppelt hat.
+  Die jährliche Kapitalentwicklung ist tabellarisch auszugeben.
+
+  Verwenden Sie die Schleife mit nachfolgender Bedingungsprüfung.
+
+
+  int main()
+{
+float einzahlung, zinssatz, kapital;
+cout<<"Gib die Einzahlung ein: "<<endl;
+cin>>einzahlung;
+cout<<"Gib den Zinssatz an: "<<endl;
+cin>>zinssatz;
+
+kapital=(einzahlung*2);
+
+int x=1;
+do
+{
+einzahlung=(einzahlung+(einzahlung*(zinssatz/100)));
+cout<<"Jahr: "<<x<<" Betrag: "<<einzahlung<<endl;
+x++;
+}
+while (einzahlung <= kapital);
+
+
+         getchar();
+	return 0;
+}

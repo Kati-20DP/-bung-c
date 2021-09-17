@@ -1,0 +1,34 @@
+### Geheime Zahl raten
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+int geheim=42;
+int rate;
+cout<<"Rate"<<endl;
+
+do
+{
+cin>>rate;
+if(rate<geheim)
+{
+cout<<"zu klein";
+}
+
+else
+	if (rate==geheim)
+	{
+	cout<<"Super";
+	}
+	else
+	{
+	cout<<"zu hoch";
+	}
+}
+
+while (rate!=geheim);
+  getchar();
+  return 0;
+}
