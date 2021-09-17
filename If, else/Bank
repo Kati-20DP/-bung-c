@@ -1,0 +1,32 @@
+##Bank
+
+Ein Kunde bekommt 3 Prozent Zinsen auf seine Spareinlagen. Legt er
+Geld 3 Jahre oder länger fest an, bekommt er 4 Prozent und bei Festlegung von
+6 Jahren oder mehr sogar 5%.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+float anlage;
+cout<<"Wie lange möchten Sie anlegen:";
+cin>>anlage;
+
+if (anlage<3)
+{
+cout<<"Sie bekommen 3 % Zinsen";
+}
+else
+	if (anlage>6)
+	{
+	cout<<"Sie bekommen 5 % Zinsen";
+	}
+	else
+	{
+	cout<<"Sie bekommen 4 % Zinsen";
+	}
+
+  getchar();
+  return 0;
+}
