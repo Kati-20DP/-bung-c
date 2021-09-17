@@ -62,7 +62,7 @@ int main()
 {
     float kw, weite, ende, ps, x, y, z;
 
-    x:
+    x:                                          //Sprungmarke
     cout<<"Geben Sie den Anfangswert an: ";
         if (cin>>kw && kw >0)
  			{
