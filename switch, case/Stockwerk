@@ -1,0 +1,40 @@
+### Stockwerk
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+int stockwert;
+
+cout<<"1. Stock Süßigkeiten \n"
+    <<"2. Stock Bekleidung \n"
+    <<"3. Stock Bekleidung \n"
+    <<"4. Stock Spielzeug \n"
+    <<"5. Stock Unterhaltungselektronik \n";
+
+cout<<"Bitte wählen";
+cin>>stockwert;
+
+switch (stockwert)
+{
+case 1:
+	cout<<"Sueßigkeiten";
+	break;
+case 2:
+case 3:
+	cout<<"Bekleidung";
+	break;
+case 4:
+	cout<<"Spielzeug";
+	break;
+case 5:
+	cout<<"Unterhaltungselektronik";
+	break;
+default:
+	cout<<"Garage";
+
+}
+  getchar();
+  return 0;
+}
