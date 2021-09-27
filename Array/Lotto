@@ -18,3 +18,28 @@ cout<<lotto[i];
   getchar();
   return 0;
 }
+
+
+### Mit zufall
+
+#include <iostream>
+#include<cstdlib>
+using namespace std;
+int main()
+{
+const int Lotto =6;
+int lotto[Lotto];
+srand(time(0));
+
+for (int i=0;i<Lotto;i++)
+{
+lotto [i]=rand() % 49+1;
+}
+for (int i=0;i<Lotto;i++)
+{
+cout<<lotto[i];
+}
+
+  getchar();
+  return 0;
+}
