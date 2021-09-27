@@ -1,0 +1,16 @@
+#include <iostream>
+#include<cstdlib>
+using namespace std;
+
+int main()
+{
+const int wert=9;
+long zufall;
+srand(wert);
+zufall=rand();
+cout<<zufall;
+
+
+  getchar();
+  return 0;
+}
