@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int passanger; //total passanger on a station
+
+    int bus = 50; //max passanger a bus can carry
+
+    cin>>passanger;//inputs the number of passangers
+
+    int passLeft = passanger % bus;  //calculates passangers left
+
+    int seat = 50 - passLeft;//calculates seats left
+
+    cout<<seat; //output result
+    return 0;
+}
