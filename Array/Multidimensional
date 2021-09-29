@@ -1,0 +1,22 @@
+You are given a two-dimensional array with 3 rows and 3 columns -- 9 elements.
+Here is the array:
+string arr[3][3] = {
+    {"Python", "JS", "C++"},
+    {"PHP", "SQL", "Java"},
+    {"C#", "Swift", "Kotlin"},
+};
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    string arr[3][3] = {
+        {"Python", "JS", "C++"},
+        {"PHP", "SQL", "Java"},
+        {"C#", "Swift", "Kotlin"},
+    };
+    // your code goes here
+
+    cout<<arr[0][2];
+    return 0;
